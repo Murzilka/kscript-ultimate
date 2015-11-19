@@ -574,29 +574,8 @@
                 <dict>
                     <key>begin</key>
                     <string>'</string>
-                    <key>beginCaptures</key>
-                    <dict>
-                        <key>1</key>
-                        <dict>
-                            <key>name</key>
-                            <string>punctuation.definition.string.begin.js</string>
-                        </dict>
-                        <key>2</key>
-                        <dict>
-                            <key>name</key>
-                            <string>comment.directive.js</string>
-                        </dict>
-                    </dict>
                     <key>end</key>
                     <string>'</string>
-                    <key>endCaptures</key>
-                    <dict>
-                        <key>0</key>
-                        <dict>
-                            <key>name</key>
-                            <string>punctuation.definition.string.end.js</string>
-                        </dict>
-                    </dict>                    
                 </dict>
                 <!-- Strings (Double Quotes) -->
                 <dict>
