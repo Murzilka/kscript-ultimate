@@ -3,15 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>comment</key>
-    <string>JavaScript Ultimate. Sublime Text 2 package created by Joshua Wise. Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php).</string>
+    <string>KScript Ultimate. Sublime Text 2 package created by Joshua Wise. Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php).</string>
     <key>fileTypes</key>
     <array>
-        <string>js</string>
-        <string>htc</string>
-        <string>jsx</string>
+        <string>ks</string>
     </array>
     <key>name</key>
-    <string>JavaScript</string>
+    <string>KScript</string>
     <key>scopeName</key>
     <string>source.js</string>
     <key>firstLineMatch</key>
@@ -609,26 +607,6 @@
                             <key>name</key>
                             <string>constant.character.escape.js</string>
                         </dict>
-                        <dict>
-                            <key>match</key>
-                            <string>(\\)\n</string>
-                            <key>name</key>
-                            <string>constant.character.escape.js</string>
-                            <key>captures</key>
-                            <dict>
-                                <key>1</key>
-                                <dict>
-                                    <key>name</key>
-                                    <string>linecontinuation.js</string>
-                                </dict>
-                            </dict>
-                        </dict>
-                        <dict>
-                            <key>match</key>
-                            <string>\\</string>
-                            <key>name</key>
-                            <string>invalid.illegal.js</string>
-                        </dict>
                     </array>
                 </dict>
                 <!-- Strings (Double Quotes) -->
@@ -944,7 +922,7 @@
                 <!-- Specification Global Classes -->
                 <dict>
                     <key>match</key>
-                    <string>(?&lt;![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])(?>Object|F(?>unction|loat(?>32Array|64Array))|Boolean|Number|S(?>tring|yntaxError)|R(?>e(?>gExp|ferenceError)|angeError)|Array(?>Buffer)?|Int(?>8Array|16Array|32Array)|U(?>int(?>8(?>Array|ClampedArray)|16Array|32Array)|RIError)|Dat(?>aView|e)|E(?>rror|valError)|TypeError)(?![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])</string>
+                    <string>(?&lt;![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])(?>Object|F(?>unction|loat(?>32Array|64Array))|Boolean|Number|S(?>tring|yntaxError)|R(?>e(?>gExp|ferenceError)|angeError)|Array(?>Buffer)?|Int(?>8Array|16Array|32Array)|U(?>int(?>8(?>Array|ClampedArray)|16Array|32Array)|RIError)|D(?>ocument|at(?>a(?>Base|View)|e))|E(?>rror|valError)|TypeError)(?![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])</string>
                     <key>name</key>
                     <string>support.class.js</string>
                 </dict>
