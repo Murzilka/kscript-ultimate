@@ -920,14 +920,14 @@
                 <!-- Specification Global Singletons -->
                 <dict>
                     <key>match</key>
-                    <string>(?&lt;![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])(?>Math|JSON)(?![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])</string>
+                    <string>(?&lt;![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])(?>Math|JSON|Application|Shell|DriverManager)(?![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])</string>
                     <key>name</key>
                     <string>support.constant.js</string>
                 </dict>
                 <!-- Specification Global Functions -->
                 <dict>
                     <key>match</key>
-                    <string>(?&lt;![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])(?>e(?>val|ncodeURI(?>Component)?)|is(?>Finite|NaN)|parse(?>Float|Int)|decodeURI(?>Component)?)(?![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])</string>
+                    <string>(?&lt;![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])(?>alert|e(?>val|ncodeURI(?>Component)?)|is(?>Finite|NaN)|parse(?>Float|Int)|decodeURI(?>Component)?|Output)(?![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])</string>
                     <key>name</key>
                     <string>support.function.js</string>
                 </dict>
@@ -941,7 +941,7 @@
                 <!-- Specification Instance Methods -->
                 <dict>
                     <key>match</key>
-                    <string>(?&lt;=\.)\s*+(?>apply|bind|c(?>all|har(?>At|CodeAt)|oncat)|e(?>very|xec)|f(?>ilter|orEach)|get(?>Da(?>te|y)|F(?>ullYear|loat(?>32|64))|Hours|M(?>i(?>lliseconds|nutes)|onth)|Seconds|Time(?>zoneOffset)?|U(?>TC(?>Da(?>te|y)|FullYear|Hours|M(?>i(?>lliseconds|nutes)|onth)|Seconds)|int(?>8|16|32))|Int(?>8|16|32))?|hasOwnProperty|i(?>ndexOf|sPrototypeOf)|join|l(?>astIndexOf|ocaleCompare)|ma(?>p|tch)|p(?>op|ropertyIsEnumerable|ush)|re(?>duce(?>Right)?|place|verse)|s(?>e(?>arch|t(?>Date|F(?>ullYear|loat(?>32|64))|Hours|M(?>i(?>lliseconds|nutes)|onth)|Seconds|Time|U(?>TC(?>Date|FullYear|Hours|M(?>i(?>lliseconds|nutes)|onth)|Seconds)|int(?>8|16|32))|Int(?>8|16|32))?)|hift|lice|o(?>me|rt)|pli(?>ce|t)|ub(?>string|array))|t(?>est|o(?>DateString|Exponential|Fixed|ISOString|JSON|Lo(?>cale(?>DateString|LowerCase|String|TimeString|UpperCase)|werCase)|Precision|String|TimeString|U(?>TCString|pperCase))|rim)|unshift|valueOf)(?=\s*+\()</string>
+                    <string>(?&lt;=\.)\s*+(?>apply|bind|c(?>all|har(?>At|CodeAt)|oncat)|e(?>very|xec(?>ute)?)|f(?>ilter|orEach)|get(?>Da(?>te|y)|F(?>ullYear|loat(?>32|64))|Hours|M(?>i(?>lliseconds|nutes)|onth)|Seconds|Time(?>zoneOffset)?|U(?>TC(?>Da(?>te|y)|FullYear|Hours|M(?>i(?>lliseconds|nutes)|onth)|Seconds)|int(?>8|16|32))|Int(?>8|16|32)|Connection|ResultSet)?|hasOwnProperty|i(?>ndexOf|sPrototypeOf)|join|l(?>astIndexOf|ocaleCompare)|ma(?>p|tch)|p(?>op|r(?>epareStatement|opertyIsEnumerable)|ush)|re(?>ad(?>Line)?|duce(?>Right)?|place|verse)|s(?>e(?>arch|t(?>Date|F(?>ullYear|loat(?>32|64))|Hours|M(?>i(?>lliseconds|nutes)|onth)|Seconds|Time|U(?>TC(?>Date|FullYear|Hours|M(?>i(?>lliseconds|nutes)|onth)|Seconds)|int(?>8|16|32))|Int(?>8|16|32))?)|hift|lice|o(?>me|rt)|pli(?>ce|t)|ub(?>string|array))|t(?>est|o(?>DateString|Exponential|Fixed|ISOString|JSON|L(?>ist|o(?>cale(?>DateString|LowerCase|String|TimeString|UpperCase)|werCase))|Precision|String|TimeString|U(?>TCString|pperCase))|rim)|unshift|valueOf|Attr|Create|Lock|NewField|Open|Print|Unlock|Write)(?=\s*+\()</string>
                     <key>name</key>
                     <string>support.function.js</string>
                 </dict>
@@ -955,7 +955,7 @@
                 <!-- Specification Instance Properties -->
                 <dict>
                     <key>match</key>
-                    <string>(?&lt;=\.)\s*+(?>constructor|name|length|m(?>essage|ultiline)|global|ignoreCase|source|b(?>yte(?>Length|Offset)|uffer))(?![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])</string>
+                    <string>(?&lt;=\.)\s*+(?>constructor|name|length|m(?>axdoc|essage|ultiline)|global|ignoreCase|source|b(?>yte(?>Length|Offset)|uffer)|Area|CharSet|N(?>ame|umDoc)|S(?>ize|truct))(?![\p{L}\p{Nl}$\p{Mn}\p{Mc}\p{Nd}\p{Pc}_\x{200C}\x{200D}])</string>
                     <key>name</key>
                     <string>support.constant.js</string>
                 </dict>
